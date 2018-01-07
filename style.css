@@ -23,3 +23,123 @@ ol, ul {
   list-style: none;
 }
 
+
+/*custom styles*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: white;
+    font-family: Oswald, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 300;
+}
+
+header {
+    background-color: #43214d;
+    padding: 2rem;
+    
+}
+
+/*typography*/
+
+.heading {
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+.heading-primary {
+    font-size: 6rem;
+    color: hsl(38, 96%, 50%);
+    opacity: 0.8;
+    transition: opacity 0.7s;
+}
+
+span {
+    margin-top: 2rem;
+    text-transform: capitalize;
+    display: block;
+    font-family: Lobster;
+    
+}
+
+.heading-secondary {
+    font-size: 4rem;
+    color: #84389C;
+    transform: skewY(-5deg);
+    background-color: cyan;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.heading-tertiary {
+    font-weight: bold;
+    font-size: 3rem;
+    color: cyan;
+    border-bottom: 1px solid cyan;
+}
+
+.info-text {
+    font-size: 2rem;
+    line-height: 2;
+    letter-spacing: 0.7px;
+}
+
+figure {
+    background-color: #43214d;
+}
+
+figcaption {
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.info {
+    background-color: #FAA517;
+    padding: 3rem;
+}
+
+.info-card {
+    background-color: #43214d;
+    padding: 3rem;
+}
+
+.link {
+   font-size: 2.5rem;
+   background-color: cyan;
+   padding: 3rem;
+   font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color:  #43214d;
+    text-decoration: underline;
+}
+a:hover {
+    color: #84389C;
+}
+
+footer {
+    background-color: #43214d;
+    padding: 1rem;
+}
+
+/*animations*/
+.heading-secondary:hover {
+    transform: skewY(-5deg) scale(1.1);
+}
+
+.heading-primary:hover {
+    opacity: 1;
+}
+
