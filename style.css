@@ -106,6 +106,10 @@ img {
 .info {
     background-color: #FAA517;
     padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .info-card {
@@ -117,21 +121,23 @@ img {
    font-size: 2.5rem;
    background-color: cyan;
    padding: 3rem;
+   width: 100%;
    font-weight: bold;
+   color:  #43214d;
 }
 
 a {
-    text-decoration: none;
-    color:  #43214d;
     text-decoration: underline;
 }
-a:hover {
+
+.link:hover {
     color: #84389C;
 }
 
 footer {
     background-color: #43214d;
     padding: 1rem;
+    font-size: 1.8rem;
 }
 
 /*animations*/
@@ -143,3 +149,21 @@ footer {
     opacity: 1;
 }
 
+
+@media(min-width:1024px) {
+    html {
+        font-size: 70%;
+    }
+    .info {
+
+    }
+   .heading-secondary {
+    flex: 0 1 30rem;
+   }
+    .info-card {
+        flex: 0 1 30rem;
+        border-radius: 1rem;
+        margin: 2rem;
+    }
+
+}
