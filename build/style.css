@@ -87,6 +87,7 @@ span {
     font-size: 3rem;
     color: cyan;
     border-bottom: 1px solid cyan;
+    padding: 0.5rem;
 }
 
 .info-text {
@@ -136,10 +137,7 @@ img {
    width: 100%;
    font-weight: bold;
    color:  #43214d;
-}
-
-a {
-    text-decoration: underline;
+   cursor: pointer;
 }
 
 .link:hover {
@@ -175,10 +173,15 @@ footer {
    }
    
     .info-card {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 1 30rem;
-                flex: 0 1 30rem;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 0 30rem;
+                flex: 1 0 30rem;
         border-radius: 1rem;
         margin: 2rem;
+    }
+
+    .link {
+        -ms-flex-preferred-size: 40rem;
+            flex-basis: 40rem;
     }
 }
