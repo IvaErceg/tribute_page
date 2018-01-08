@@ -116,19 +116,20 @@ img {
 .info-card {
     background-color: #43214d;
     padding: 3rem;
+    width: 100%;
 }
 
 .link {
-   font-size: 2.5rem;
+   font-size: 2rem;
    background-color: cyan;
-   padding: 3rem;
+   padding: 2rem;
    width: 100%;
    font-weight: bold;
    color:  #43214d;
    cursor: pointer;
 }
 
-.link:hover {
+a:hover, a:focus, a:active {
     color: #84389C;
 }
 
@@ -148,22 +149,43 @@ footer {
 }
 
 
-@media(min-width:1024px) {
+@media(min-width:799px) {
     html {
         font-size: 70%;
     }
     
    .heading-secondary {
-    flex: 0 1 30rem;
+    flex-basis: 30rem;
    }
    
     .info-card {
-        flex: 1 0 30rem;
+        flex-basis: 35rem;
         border-radius: 1rem;
-        margin: 2rem;
+        margin: 1rem;
     }
 
     .link {
-        flex-basis: 40rem;
+        margin: 3rem;
+        flex-basis: 25rem;
+    }
+}
+
+@media(min-width:2323px) {
+    html {
+        font-size: 75%;
+    }
+    
+   .heading-secondary {
+        flex: 1 1 35rem;
+   }
+   .info {
+       flex-wrap: nowrap;
+   }
+    .info-card {
+        flex: 3 1 50rem;
+    }
+
+    .link {
+        flex: 1 1 35rem;
     }
 }
